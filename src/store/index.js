@@ -1,11 +1,16 @@
-import Vue from "vue";
-import Vuex from "vuex";
+import Vue from 'vue'
+import Vuex from 'vuex'
+import todoModule from './modules/todoModule'
+import userModule from './modules/userModule'
 
-Vue.use(Vuex);
+Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {},
-  mutations: {},
   actions: {},
-  modules: {},
-});
+  mutations: {},
+  modules: {
+    todoModule,
+    userModule,
+  },
+})
